@@ -1,12 +1,9 @@
 # Vml_CustomerImport
 Import Customer with cron command in CSV or JSON format
 
-# Vml_CustomerImport
-Import Customer with cron command in CSV or JSON format
+# Magento2 Module Vml CustomerImport
 
-# Mage2 Module Magelearn Customform
-
-    ``magelearn/module-customform``
+    ``vml/magento2-module-customerimport``
 
  - [Main Functionalities](#markdown-header-main-functionalities)
  - [Installation](#markdown-header-installation)
