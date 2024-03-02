@@ -17,12 +17,20 @@
         "magento/module-customer": "103.0.*",
         "magento/module-customer-import-export": "100.4.*"
     },
-    "repositories": {
-        "vml/magento2-module-customerimport": {
-            "type": "git",
-            "url": "https://github.com/vijayrami/Vml_CustomerImport"
-        }
-    },
+    "repositories": [
+	{
+	    "type": "package",
+	    "package": {
+	        "name": "vml/magento2-module-customerimport",
+	        "version": "1.0",
+	        "source": {
+	            "url": "https://github.com/vijayrami/Vml_CustomerImport.git",
+	            "type": "git",
+	            "reference": "main"
+	        }
+	    }
+	}
+	],
     "autoload": {
         "files": [
             "registration.php"
