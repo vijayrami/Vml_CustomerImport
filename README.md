@@ -8,8 +8,8 @@ Import Customer with cron command in CSV or JSON format
  - [Main Functionalities](#main-functionalities)
  - [Installation](#installation)
  - [Features](#features)
- - [Specifications](#markdown-header-specifications)
- - [Attributes](#markdown-header-attributes)
+ - [Configurations](#configurations)
+ - [Screenshots](#screenshots)
 
 
 ## Main Functionalities
