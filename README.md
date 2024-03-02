@@ -26,15 +26,12 @@ Import Customer with cron command which is supplied via CSV or JSON format.
 
 ### Type 2: Composer
 
- - Make the module available in a composer repository for example:
-    - private repository `repo.magento.com`
-    - public repository `packagist.org`
-    - public github repository as vcs
- - Add the composer repository to the configuration by running `composer config repositories.repo.magento.com composer https://repo.magento.com/`
- - Install the module composer by running `composer require magelearn/module-customform`
- - enable the module by running `php bin/magento module:enable Magelearn_Customform`
- - apply database updates by running `php bin/magento setup:upgrade`\*
- - Flush the cache by running `php bin/magento cache:flush`
+ - Install the module composer by running `composer require vml/magento2-module-customerimport`
+ - Enable the module by running `php bin/magento module:enable Vml_CustomerImport`
+ - Run Magento commands by running
+
+   `php bin/magento set:upg && php bin/magento set:d:c && php bin/magento set:s:d -f && php bin/magento c:c && php bin/magento c:f`
+ - Give `var` and `pub` folder to 777 permission by running `chmmod -R 0777 var/ pub/`
 
 
 ## Configuration
