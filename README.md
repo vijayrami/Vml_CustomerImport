@@ -7,7 +7,7 @@ Import Customer with cron command in CSV or JSON format
 
  - [Main Functionalities](#markdown-header-main-functionalities)
  - [Installation](#markdown-header-installation)
- - [Configuration](#markdown-header-configuration)
+ - [Features](#markdown-header-features)
  - [Specifications](#markdown-header-specifications)
  - [Attributes](#markdown-header-attributes)
 
@@ -34,13 +34,9 @@ Import Customer with cron command which is supplied via CSV or JSON format.
  - Give `var` and `pub` folder to 777 permission by running `chmmod -R 0777 var/ pub/`
 
 
-## Configuration
+## Features
 
-- Front end URLs:
-    - for customform: `/customform/`
-    - for customform list page `/customform/index/list`
-    - for customform view page `/customform/index/view/id/**`
-
+Create customers from CSV or JSON file from command line terminal.
 
 ## Specifications
 
