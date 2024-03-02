@@ -15,6 +15,7 @@ Import Customer with cron command in CSV or JSON format
 ## Main Functionalities
 Import Customer with cron command which is supplied via CSV or JSON format.
 
+## Installation
 ### Type 1: Zip file
 
  - Unzip the zip file in `app/code/Vml/CustomerImport`
