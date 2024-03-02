@@ -43,11 +43,11 @@ Create customers from CSV or JSON file from command line terminal.
 
 `bin/magento customer:import <profile-name> <source>`
 
-#### So to import from the CSV and the JSON respectively the user would execute either one of the following
+##### So to import from the CSV and the JSON respectively the user would execute either one of the following
 
-##### profile-name is 'sample-csv' or 'sample-json'
+##### `profile-name` is 'sample-csv' or 'sample-json'
 
-##### source is your file path name added in `var/import` folder (eg. 'sample.csv' or 'sample.json')
+##### `source` is your file path name added in `var/import` folder (eg. 'sample.csv' or 'sample.json')
 
      *   [-f|--customer-firstname CUSTOMER-FIRSTNAME]
      *   [-l|--customer-lastname CUSTOMER-LASTNAME]
