@@ -5,9 +5,9 @@ Import Customer with cron command in CSV or JSON format
 
     ``vml/magento2-module-customerimport``
 
- - [Main Functionalities](#markdown-header-main-functionalities)
- - [Installation](#markdown-header-installation)
- - [Features](#markdown-header-features)
+ - [Main Functionalities](#main-functionalities)
+ - [Installation](#installation)
+ - [Features](#features)
  - [Specifications](#markdown-header-specifications)
  - [Attributes](#markdown-header-attributes)
 
