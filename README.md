@@ -39,10 +39,27 @@ Import Customer with cron command which is supplied via CSV or JSON format.
 
 Create customers from CSV or JSON file from command line terminal.
 
-## Specifications
+## Configurations
+
+`bin/magento customer:import <profile-name> <source>`
+
+#### So to import from the CSV and the JSON respectively the user would execute either one of the following
+
+##### profile-name is 'sample-csv' or 'sample-json'
+
+##### source is your file path name added in `var/import` folder (eg. 'sample.csv' or 'sample.json')
+
+     *   [-f|--customer-firstname CUSTOMER-FIRSTNAME]
+     *   [-l|--customer-lastname CUSTOMER-LASTNAME]
+     *   [-e|--customer-email CUSTOMER-EMAIL]
+     *   [-p|--customer-password CUSTOMER-PASSWORD]
+     *   [-w|--website WEBSITE]
+     *   [-s|--send-email [SEND-EMAIL]]
+     *   [-ns|--newsletter-subscribe [NEWSLETTER-SUBSCRIBE]]
+     *
+    php bin/magento magelearn:customer:create -f "Vijay" -l "Rami" -e "vijaymrami@gmail.com" -p "test123" -w 1
+    php bin/magento magelearn:customer:create -f "Vijay" -l "Rami" -e "vijaymrami@gmail.com" -p "test123" -w 1 -s 1 --newsletter-subscribe 1
 
 
-
-
-## Attributes
+## Screenshots
 
