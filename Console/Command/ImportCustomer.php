@@ -106,7 +106,7 @@ class ImportCustomer extends Command
             new InputArgument(
                 ImportInterface::SOURCE,
                 InputArgument::REQUIRED,
-                "Source Path ex: var/import/sample.csv or var/import/sample.json"
+                "Source Path ex: sample.csv or sample.json"
             )
         ]);
         parent::configure();
