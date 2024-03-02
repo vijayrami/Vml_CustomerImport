@@ -49,16 +49,22 @@ Create customers from CSV or JSON file from command line terminal.
 
 ##### `source` is your file path name added in `var/import` folder (eg. 'sample.csv' or 'sample.json')
 
-     *   [-f|--customer-firstname CUSTOMER-FIRSTNAME]
-     *   [-l|--customer-lastname CUSTOMER-LASTNAME]
-     *   [-e|--customer-email CUSTOMER-EMAIL]
-     *   [-p|--customer-password CUSTOMER-PASSWORD]
-     *   [-w|--website WEBSITE]
-     *   [-s|--send-email [SEND-EMAIL]]
-     *   [-ns|--newsletter-subscribe [NEWSLETTER-SUBSCRIBE]]
-     *
-    php bin/magento magelearn:customer:create -f "Vijay" -l "Rami" -e "vijaymrami@gmail.com" -p "test123" -w 1
-    php bin/magento magelearn:customer:create -f "Vijay" -l "Rami" -e "vijaymrami@gmail.com" -p "test123" -w 1 -s 1 --newsletter-subscribe 1
+*    `php bin/magento customer:import --help`
+    
+*    Description:
+      Customer Import via CSV & JSON
+
+*    Usage:
+      customer:import <profile> <source>
+
+*    Arguments:
+      profile               Profile name ex: sample-csv or sample-json
+      source                Source Path ex: sample.csv or sample.json
+  
+    ```
+    bin/magento customer:import sample-csv sample.csv
+    bin/magento customer:import sample-json sample.json
+    ```
 
 
 ## Screenshots
