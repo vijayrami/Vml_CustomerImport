@@ -61,10 +61,10 @@ Create customers from CSV or JSON file from command line terminal.
       profile               Profile name ex: sample-csv or sample-json
       source                Source Path ex: sample.csv or sample.json
   
-    ```
+    `
     bin/magento customer:import sample-csv sample.csv
     bin/magento customer:import sample-json sample.json
-    ```
+    `
 
 
 ## Screenshots
