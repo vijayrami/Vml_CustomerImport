@@ -69,3 +69,4 @@ Create customers from CSV or JSON file from command line terminal.
 
 ## Screenshots
 
+![cli-help](/assests/image.png)
