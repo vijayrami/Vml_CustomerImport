@@ -17,21 +17,6 @@ use Vml\CustomerImport\Model\Import\CustomerImport;
 class Customer
 {
     /**
-     * @var File
-     */
-    private $file;
-    
-    /**
-     * @var StoreManagerInterface
-     */
-    private $storeManagerInterface;
-
-    /**
-     * @var CustomerImport
-     */
-    private $customerImport;
-
-    /**
      * @var OutputInterface
      */
     private $output;
@@ -42,13 +27,10 @@ class Customer
      * @param CustomerImport $customerImport
      */
     public function __construct(
-        File $file,
-        StoreManagerInterface $storeManagerInterface,
-        CustomerImport $customerImport
+        private File $file,
+        private StoreManagerInterface $storeManagerInterface,
+        private CustomerImport $customerImport
     ) {
-        $this->file = $file;
-        $this->storeManagerInterface = $storeManagerInterface;
-        $this->customerImport = $customerImport;
     }
 
     /**

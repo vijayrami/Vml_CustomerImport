@@ -32,37 +32,6 @@ class ImportCustomer extends Command
     protected $importer;
 
     /**
-     * @var StoreManagerInterface
-     */
-    protected $storeManager;
-
-    /**
-     * @var Customer
-     */
-    
-    private $customer;
-
-    /**
-     * @var Filesystem
-     */
-    private $filesystem;
-
-    /**
-     * @var State
-     */
-    private $state;
-    
-    /**
-     * @var CsvImporterFactory
-     */
-    private $csvimporterfactory;
-    
-    /**
-     * @var JsonImporterFactory
-     */
-    private $jsonimporterfactory;
-
-    /**
      * CustomerImport constructor.
      *
      * @param Customer $customer
@@ -73,21 +42,14 @@ class ImportCustomer extends Command
      * @param JsonImporterFactory $jsonimporterfactory
      */
     public function __construct(
-        Customer $customer,
-        StoreManagerInterface $storeManager,
-        Filesystem $filesystem,
-        State $state,
-        CsvImporterFactory $csvimporterfactory,
-        JsonImporterFactory $jsonimporterfactory
+        private Customer $customer,
+        protected StoreManagerInterface $storeManager,
+        private Filesystem $filesystem,
+        private State $state,
+        private CsvImporterFactory $csvimporterfactory,
+        private JsonImporterFactory $jsonimporterfactory
     ) {
         parent::__construct();
-
-        $this->customer = $customer;
-        $this->storeManager = $storeManager;
-        $this->filesystem = $filesystem;
-        $this->state = $state;
-        $this->csvimporterfactory = $csvimporterfactory;
-        $this->jsonimporterfactory = $jsonimporterfactory;
     }
 
     /**

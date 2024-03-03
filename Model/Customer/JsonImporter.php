@@ -21,25 +21,6 @@ use Symfony\Component\Console\Input\InputInterface;
 class JsonImporter implements ImportInterface
 {
     /**
-     * @var File
-     */
-    private $file;
-    
-    /**
-     * @var DirectoryList
-     */
-    protected $dir;
-
-    /**
-     * @var LoggerInterface
-     */
-    private $logger;
-    /**
-     * @var SerializerInterface
-     */
-    private $serializer;
-
-    /**
      * CsvImporter constructor.
      * @param File $file
      * @param DirectoryList $dir
@@ -47,15 +28,11 @@ class JsonImporter implements ImportInterface
      * @param LoggerInterface $logger
      */
     public function __construct(
-        File $file,
-        DirectoryList $dir,
-        SerializerInterface $serializer,
-        LoggerInterface $logger
+        private File $file,
+        protected DirectoryList $dir,
+        private SerializerInterface $serializer,
+        private LoggerInterface $logger
     ) {
-        $this->file = $file;
-        $this->dir = $dir;
-        $this->serializer = $serializer;
-        $this->logger = $logger;
     }
     /**
      * @inheritDoc

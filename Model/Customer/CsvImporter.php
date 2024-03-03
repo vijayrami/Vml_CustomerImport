@@ -26,24 +26,6 @@ class CsvImporter implements ImportInterface
     protected $keys;
 
     /**
-     * @var Csv
-     */
-    protected $csv;
-    /**
-     * @var File
-     */
-    private $file;
-    /**
-     * @var LoggerInterface
-     */
-    private $logger;
-    
-    /**
-     * @var DirectoryList
-     */
-    protected $dir;
-
-    /**
      * CsvImporter constructor.
      * @param File $file
      * @param Csv $csv
@@ -51,15 +33,11 @@ class CsvImporter implements ImportInterface
      * @param LoggerInterface $logger
      */
     public function __construct(
-        File $file,
-        Csv $csv,
-        DirectoryList $dir,
-        LoggerInterface $logger
+        private File $file,
+        protected Csv $csv,
+        protected DirectoryList $dir,
+        private LoggerInterface $logger
     ) {
-        $this->csv = $csv;
-        $this->file = $file;
-        $this->dir = $dir;
-        $this->logger = $logger;
     }
 
     /**

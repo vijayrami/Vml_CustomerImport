@@ -65,7 +65,9 @@ Create customers from CSV or JSON file from command line terminal.
     bin/magento customer:import sample-csv sample.csv
     bin/magento customer:import sample-json sample.json
     
+Once we run our customer import script, we also need to make sure to re-index the Customer Grid indexer
 
+    `php bin/magento indexer:reindex customer_grid`
 
 ## Screenshots
 
